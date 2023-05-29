@@ -53,8 +53,15 @@ repositories {
     jcenter()
 }
 
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
-    implementation "com.websitebeaver:documentscanner:1.3.4"
+//    implementation "com.websitebeaver:documentscanner:1.3.4"
+    implementation 'com.github.tungnc3142:android-document-scanner:1.0.0'
 }
